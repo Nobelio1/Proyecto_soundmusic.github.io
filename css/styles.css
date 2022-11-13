@@ -152,7 +152,7 @@ header nav a.activo{
     text-align: center;
     font-size: 50px;
     font-weight: bolder;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 1px black;
 }
 
 .desc-2,
@@ -162,6 +162,21 @@ header nav a.activo{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: brightness(50%);
+}
+
+
+.desc-3:hover{
+    filter: grayscale(0);
+}
+.desc-2:hover{
+    filter: grayscale(0);
+}
+.desc-4:hover{
+    filter: grayscale(0);
+}
+.desc-5:hover{
+    filter: grayscale(0);
 }
 
 .tipos-grid p{
@@ -175,6 +190,7 @@ header nav a.activo{
 
 .desc-3{
     background-image: url(../img/escuchando-musica.jpg);
+    transition: all ease-in-out 600ms;
 }
 
 .desc-4 {
@@ -201,7 +217,7 @@ header nav a.activo{
 
 .container-4{
     margin: 0.4em;
-    padding-top: 3em;
+    padding: 2em 0;
     z-index: 2;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 40px;
@@ -264,3 +280,33 @@ header nav a.activo{
     justify-content: space-around;
 }
 
+.col-33{
+    width: 33.3333333%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros p:first-child{
+    font-weight: bolder;
+    padding-bottom: 0.2em;
+}
+
+.redes-sc{
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5em;
+}
+
+.redes-sc a img{
+    width: 30px;
+    margin: 0 2em;
+    filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(69deg) brightness(111%) contrast(100%);
+}
+
+.politicas{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+}

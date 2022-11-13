@@ -111,7 +111,7 @@ header nav a.activo{
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    padding: 10em 0;
+    padding: 8em 0;
 }
 
 .desc-1{
@@ -190,8 +190,77 @@ header nav a.activo{
     color: #D4ECDD;
     margin: 1em 0 4em 0;
     transition: all ease-in-out 400ms;
+    font-weight: bolder;
 }
 
 .enlace-tipos a:hover{
     text-decoration: underline;
 }
+
+/* Parallax */
+
+.container-4{
+    margin: 0.4em;
+    padding-top: 3em;
+    z-index: 2;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+}
+
+.parallax{
+    background-image: url(../img/img-parallax.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-intro p {
+    text-align: center;
+}
+
+.novedades-correo input{
+    border: none;
+    border-bottom: 3px solid white;
+    font-size: 30px;
+    margin: 1em;
+    background-color: transparent;
+    border-radius: 0;
+    color: white;
+    padding: 0.5em 2em;
+}
+
+.novedades-correo input:focus{
+    outline: none;
+}
+
+.invita-registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.invita-registro a{
+    margin: 0.5em;
+    color: #624F82;
+    transition: all ease-in-out 400ms;
+}
+
+.invita-registro a:hover{
+    font-weight: bolder;
+}
+
+/* Footer */
+
+.fila{
+    display: flex;
+    background-color: #16213E;
+    justify-content: space-around;
+}
+

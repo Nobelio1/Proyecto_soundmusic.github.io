@@ -30,6 +30,7 @@ header{
     padding: 0 1em;
     background-color: transparent;
     z-index: 1;
+
 }
 
 .logo{
@@ -41,14 +42,18 @@ nav a{
     margin: 0.5em;
     font-family: 'Sora', sans-serif;
     transition: all ease-in-out 400ms;
+    font-size: 20px;
 }
 
 nav a:hover{
     font-weight: bolder;
+    color: #9946FF;
 }
 
 header nav a.activo{
-    font-weight: bold;
+    font-weight: bolder;
+    color: #9946FF;
+
 }
 
 /*Container-1*/
@@ -119,7 +124,7 @@ header nav a.activo{
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-left: 1em;
+    background-color: #232323;
 }
 .desc-1 p{
     margin: 2em;
@@ -128,7 +133,6 @@ header nav a.activo{
 
 .photo-1{
     width: 40%;
-    margin-right: 1em;
     background-image: url(../img/caucasian-woman-s-portrait-isolated-on-blue-background-in-multicolored-neon-light.jpg);
     background-position: center;
     background-size: cover;
@@ -139,7 +143,6 @@ header nav a.activo{
 .grid{
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 0 1em;
 }
 
 /* Container-3 */
@@ -190,7 +193,6 @@ header nav a.activo{
 
 .desc-3{
     background-image: url(../img/escuchando-musica.jpg);
-    transition: all ease-in-out 600ms;
 }
 
 .desc-4 {
@@ -203,20 +205,21 @@ header nav a.activo{
 }
 
 .enlace-tipos a{
-    color: #D4ECDD;
+    color: white;
     margin: 1em 0 4em 0;
-    transition: all ease-in-out 400ms;
+    transition: all ease-in-out 200ms;
     font-weight: bolder;
 }
 
 .enlace-tipos a:hover{
     text-decoration: underline;
+    color: #9946FF;
+    
 }
 
 /* Parallax */
 
 .container-4{
-    margin: 0.4em;
     padding: 2em 0;
     z-index: 2;
     font-family: 'Josefin Sans', sans-serif;
@@ -242,7 +245,7 @@ header nav a.activo{
 
 .novedades-correo input{
     border: none;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #9946FF;
     font-size: 30px;
     margin: 1em;
     background-color: transparent;
@@ -264,7 +267,7 @@ header nav a.activo{
 
 .invita-registro a{
     margin: 0.5em;
-    color: #624F82;
+    color: #9946FF;
     transition: all ease-in-out 400ms;
 }
 
@@ -276,8 +279,8 @@ header nav a.activo{
 
 .fila{
     display: flex;
-    background-color: #16213E;
     justify-content: space-around;
+    border-top: 1px solid gray;
 }
 
 .col-33{
@@ -305,8 +308,16 @@ header nav a.activo{
     filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(69deg) brightness(111%) contrast(100%);
 }
 
+.redes-sc a img:hover{
+    filter: invert(36%) sepia(95%) saturate(4388%) hue-rotate(253deg) brightness(103%) contrast(101%);
+}
+
 .politicas{
     display: flex;
     flex-direction: column;
     margin: 0.5em;
+}
+
+.politicas a:hover{
+    color: #9946FF;
 }
